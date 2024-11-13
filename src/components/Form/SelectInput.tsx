@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Form.module.css";
+//import styles from "./Form.module.css";
 
 interface SelectInputProps {
   label: string;
@@ -9,9 +9,9 @@ interface SelectInputProps {
 }
 
 const SelectInput: React.FC<SelectInputProps> = ({ label, options, value, onChange }) => (
-  <div className={styles.inputGroup}>
-    <label className={styles.label}>{label}</label>
-    <select value={value} onChange={onChange} className={styles.selectInput}>
+  <div className="none">
+    <label className="none">{label}</label>
+    <select value={value} onChange={onChange} className="none">
       <option value="" disabled>
         Select an option
       </option>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Form.module.css";
+//import styles from "./Form.module.css";
 
 interface TextAreaProps {
   label: string;
@@ -9,9 +9,9 @@ interface TextAreaProps {
 }
 
 const TextArea: React.FC<TextAreaProps> = ({ label, value, onChange, placeholder }) => (
-  <div className={styles.inputGroup}>
-    <label className={styles.label}>{label}</label>
-    <textarea value={value} onChange={onChange} placeholder={placeholder} className={styles.textArea} rows={4} />
+  <div className="none">
+    <label className="none">{label}</label>
+    <textarea value={value} onChange={onChange} placeholder={placeholder} className="none" rows={4} />
   </div>
 );
 
