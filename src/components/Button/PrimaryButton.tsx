@@ -1,7 +1,5 @@
 import React from "react";
 //Import styles
-import styles from "../../index.css"
-
 //import styles from "./Button.modules.css";
 
 interface PrimaryButtonProps {
@@ -14,7 +12,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ label, onClick }) => {
   return (
     //We use className attribute to apply CSS classes to elements since "class" is a JS reserved keyword
     //className={styles.primaryButton}
-    <button onClick={onClick} className="none">{label}</button>
+    <button onClick={onClick}>{label}</button>
   );
 };
 

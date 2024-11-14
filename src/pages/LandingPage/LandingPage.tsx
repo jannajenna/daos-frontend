@@ -1,4 +1,5 @@
 import React from "react";
+
 //CSS modules specifif & general
 //import styles from "./LandingPage.module.css";
 import "../../index.css";
@@ -18,7 +19,7 @@ const LandingPage: React.FC = () => {
     <section>
       <h1 className="h1">Stedet hvor musikere finder musikere og spiller musik sammen</h1>
       <div>
-        <h3 className="h3_blue"> Log ind for at finde musikere du kan spille med i hele Denmark</h3>
+        <h3 className="h3_blue"> Log ind for at finde musikere du kan spille med i hele Danmrak</h3>
         <PrimaryButton label="Opret med e-mail" onClick={() => console.log("Sign up clicked")}></PrimaryButton>
         <span>
           <p>eller</p>
