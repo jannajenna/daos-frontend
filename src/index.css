@@ -67,15 +67,7 @@ button:focus-visible {
   }
 } */
 
-h1 {
-  color: #bf1e2e;
-}
-
-h2 {
-  color: pink;
-}
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap");
-
 :root {
   --font-primary: "Oswald", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
