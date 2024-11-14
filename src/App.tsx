@@ -1,14 +1,17 @@
-//Import components
+// Import components
 import LandingPage from "./pages/LandingPage/LandingPage";
 import CreateProfile from "./pages/CreateProfile/CreateProfile";
+import React from "react";
+import Menu from "./pages/Menu/menu";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
+    <div>
+      <Menu />
       <LandingPage />
       <CreateProfile />
-    </>
+    </div>
   );
-}
+};
 
 export default App;
