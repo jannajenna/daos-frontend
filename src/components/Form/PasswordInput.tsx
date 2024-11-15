@@ -1,18 +1,12 @@
-import React from "react";
-//import styles from "./Form.module.css";
+import React from 'react';
+import './Form.modules.css';
 
 interface PasswordInputProps {
-  label: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string;
+  placeholder: string;
 }
 
-const PasswordInput: React.FC<PasswordInputProps> = ({ label, value, onChange, placeholder }) => (
-  <div className="none">
-    <label className="none">{label}</label>
-    <input type="password" value={value} onChange={onChange} placeholder={placeholder} className="none" />
-  </div>
-);
+const PasswordInput: React.FC<PasswordInputProps> = ({ placeholder }) => {
+  return <input type="password" className="form-field" placeholder={placeholder} />;
+};
 
 export default PasswordInput;

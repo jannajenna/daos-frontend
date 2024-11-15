@@ -1,34 +1,27 @@
-import React from "react";
+// src/pages/LandingPage/LandingPage.tsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { PrimaryButton, EmailInput, TextInput, PasswordInput } from '../../../src/components';
+import './LandingPage.css';
 
-//CSS modules specifif & general
-//import styles from "./LandingPage.module.css";
-import "../../index.css";
-//Imported components
-import { PrimaryButton, SecondaryButton } from "../../components";
-
-//Interface - type definition under here & porops
-
-//Funtionalitites go under here
-
-//The page itself with its componetns under here
 const LandingPage: React.FC = () => {
   return (
-    //Burger menu component:
-    //Hero component
-    //Log in or sing up  options section:
-    <section>
-      <h1 className="h1">Stedet hvor musikere finder musikere og spiller musik sammen</h1>
-      <div>
-        <h3 className="h3_blue"> Log ind for at finde musikere du kan spille med i hele Danmrak</h3>
-        <PrimaryButton label="Opret med e-mail" onClick={() => console.log("Sign up clicked")}></PrimaryButton>
-        <span>
-          <p>eller</p>
-        </span>
-        <SecondaryButton label="Log ind" onClick={() => console.log("Log in clicked")}></SecondaryButton>
+    <section className="landing-page-container">
+      <h1>Musik Samspil</h1>
+      <p className="subtitle">Stedet hvor musikere finder musikere og spiller musik sammen</p>
+      <p className="description">Log ind for at finde musikere du kan spille med i hele Danmark</p>
+
+      <div className="form-section">
+        {/* Login Options */}
+        <button className="login-button facebook" disabled>Log ind med Facebook</button>
+        <Link to="/create-profile">
+          <button className="login-button email">Opret med e-mail</button>
+        </Link>
+        <span>eller</span>
+        <button className="login-button login">Log ind</button>
       </div>
     </section>
   );
 };
 
-//export the page
 export default LandingPage;

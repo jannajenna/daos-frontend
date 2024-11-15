@@ -1,27 +1,22 @@
-import React from "react";
-//import styles from "./Form.module.css";
+import React from 'react';
+import './Form.modules.css';
 
 interface SelectInputProps {
-  label: string;
   options: string[];
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  placeholder: string;
 }
 
-const SelectInput: React.FC<SelectInputProps> = ({ label, options, value, onChange }) => (
-  <div className="none">
-    <label className="none">{label}</label>
-    <select value={value} onChange={onChange} className="none">
-      <option value="" disabled>
-        Select an option
-      </option>
-      {options.map((option) => (
-        <option key={option} value={option}>
+const SelectInput: React.FC<SelectInputProps> = ({ options, placeholder }) => {
+  return (
+    <select className="form-field">
+      <option value="" disabled selected hidden>{placeholder}</option>
+      {options.map((option, index) => (
+        <option key={index} value={option}>
           {option}
         </option>
       ))}
     </select>
-  </div>
-);
+  );
+};
 
 export default SelectInput;

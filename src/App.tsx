@@ -1,14 +1,17 @@
-//Import components
-import LandingPage from "./pages/LandingPage/LandingPage";
-import CreateProfile from "./pages/CreateProfile/CreateProfile";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/LandingPage/LandingPage';
+import CreateProfile from './pages/CreateProfile/CreateProfile';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <LandingPage />
-      <CreateProfile />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/create-profile" element={<CreateProfile />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

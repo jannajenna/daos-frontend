@@ -1,18 +1,12 @@
-import React from "react";
-//import styles from "./Form.module.css";
+import React from 'react';
 
 interface EmailInputProps {
-  label: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string;
+  placeholder: string;
 }
 
-const EmailInput: React.FC<EmailInputProps> = ({ label, value, onChange, placeholder }) => (
-  <div className="none">
-    <label className="none">{label}</label>
-    <input type="email" value={value} onChange={onChange} placeholder={placeholder} className="none" />
-  </div>
-);
+const EmailInput: React.FC<EmailInputProps> = ({ placeholder }) => {
+  return <input type="email" className="form-field" placeholder={placeholder} />;
+};
 
 export default EmailInput;
+
