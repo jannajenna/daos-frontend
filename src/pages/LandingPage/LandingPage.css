@@ -1,3 +1,4 @@
+/* Main container for the landing page */
 .landing-page-container {
     max-width: 400px;
     margin: 0 auto;
@@ -5,94 +6,86 @@
     text-align: center;
   }
   
+  /* Title styling */
   h1 {
-    color: #A02020; /* Red color */
+    font-family: var(--font-primary);
     font-size: 24px;
-    margin: 0 0 10px;
+    color: #A02020;
+    margin: 0 0 5px;
   }
   
+  /* Subtitle and description text */
   .subtitle {
-    font-size: 16px;
+    font-family: var(--font-primary);
     color: #A02020;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
   
   .description {
-    font-size: 14px;
+    font-family: var(--font-secondary);
     color: #666;
+    font-size: 14px;
     margin-bottom: 20px;
   }
   
+  /* Login section container with background and border radius */
   .form-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
   }
   
+  /* Button styling */
   .login-button {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
-    padding: 10px;
-    margin: 5px 0;
-    border: none;
+    padding: 12px;
+    margin: 10px 0;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
   }
   
+  /* Facebook login button (disabled) */
+  .login-button.facebook {
+    background-color: #E0E0E0;
+    color: #A0A0A0;
+    cursor: not-allowed;
+  }
+  
+  /* Email login button */
   .login-button.email {
     background-color: #333;
     color: #fff;
   }
   
+  /* Regular login button with border */
   .login-button.login {
     background-color: #fff;
     color: #333;
     border: 1px solid #333;
   }
   
+  /* Styling for the "eller" text with horizontal lines */
   .form-section span {
-    position: relative;
-    font-family: var(--font-secondary); 
-    font-size: 14px;
+    display: flex;
+    align-items: center;
     color: #666;
-    margin: 10px 0;
-    text-align: center;
-    width: 100%;
+    font-size: 14px;
+    margin: 15px 0;
+    font-family: var(--font-secondary);
   }
   
   .form-section span::before,
   .form-section span::after {
     content: "";
-    position: absolute;
-    top: 50%;
-    width: 40%;
+    flex: 1;
     height: 1px;
     background-color: #ccc;
-  }
-  
-  .form-section span::before {
-    left: 0;
-  }
-  
-  .form-section span::after {
-    right: 0;
-  }
-  
-  .create-profile-title {
-    font-size: 18px;
-    color: #A02020;
-    margin: 20px 0 10px;
-  }
-  
-  .create-profile-form .form-field {
-    width: 90%;
-    max-width: 300px;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    margin: 0 8px;
   }
   
