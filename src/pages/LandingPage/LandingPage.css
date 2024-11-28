@@ -1,0 +1,91 @@
+/* Main container for the landing page */
+.landing-page-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  h1 {
+    font-family: var(--font-primary);
+    font-size: 24px;
+    color: #A02020;
+    margin: 0 0 5px;
+  }
+  
+  /* Subtitle and description text */
+  .subtitle {
+    font-family: var(--font-primary);
+    color: #A02020;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-family: var(--font-secondary);
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Login section container with background and border radius */
+  .form-section {
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Button styling */
+  .login-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
+  }
+  
+  /* Facebook login button (disabled) */
+  .login-button.facebook {
+    background-color: #E0E0E0;
+    color: #A0A0A0;
+    cursor: not-allowed;
+  }
+  
+  /* Email login button */
+  .login-button.email {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Regular login button with border */
+  .login-button.login {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
+  
+  /* Styling for the "eller" text with horizontal lines */
+  .form-section span {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+    margin: 15px 0;
+    font-family: var(--font-secondary);
+  }
+  
+  .form-section span::before,
+  .form-section span::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 8px;
+  }
+  

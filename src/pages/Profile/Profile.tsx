@@ -1,55 +1,47 @@
 import React from "react";
 import styles from "./Profile.module.css";
 
-const Profile: React.FC = () => {
+const ProfilePage: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.ProfilePage}>
       {/* Header */}
       <header className={styles.header}>
         <h1 className={styles.title}>Musik Samspil</h1>
+        <p className={styles.subtitle}>Skabt af DAOS - Dansk Amatørorkester Samvirke</p>
         <div className={styles.menuIcon}>☰</div>
       </header>
 
       {/* Profile Section */}
       <section className={styles.profileSection}>
         <img src="placeholder-avatar.png" alt="User Avatar" className={styles.avatar} />
-        <h3 className={`${styles.name} ${styles.redText}`}>Susanne N.</h3>
+        <h2 className={styles.name}>Susanne N.</h2>
         <p className={styles.details}>
-          <small>Medlem siden: Maj 2020</small>
+          Medlem siden Maj 2020
           <br />
-          <small>Sidst logget ind: 1 time siden</small>
+          Sidst logget ind 1 time siden
         </p>
         <div className={styles.buttons}>
-          <button className={styles.secondaryButton}>Rediger Profil</button>
-          <button className={styles.secondaryButton} disabled>
+          <button className="primary">Rediger Profil</button>
+          <button className="disabled" disabled>
             Indstillinger
           </button>
         </div>
       </section>
 
-      {/* My Ensembles Section */}
-      <section className={styles.myEnsemblesSection}>
-        <h3 className={`${styles.sectionTitle} ${styles.blueText}`}>Mine ensembler</h3>
-        <div className={styles.ensembleCard}>
-          <img src="placeholder-ensemble.png" alt="Ensemble" className={styles.ensembleImage} />
-          <h3 className={styles.blueText}>Ingen ensembler</h3>
-          <p className={styles.bodyText}>Hvis du repræsenterer et ensemble, kan du oprette det her, så du kan lave opslag på vegne af ensemblet.</p>
-          <button className={styles.primaryButton}>Opret ensemble</button>
+      {/* Ensembles Section */}
+      <section className={styles.ensembleSection}>
+        <div className={styles.ensembleHeader}>
+          <h3 className={styles.ensembleTitle}>Mine ensembler</h3>
+          <button className="primary">Opret</button>
         </div>
-      </section>
-
-      {/* My Posts Section */}
-      <section className={styles.myPostsSection}>
-        <h3 className={`${styles.sectionTitle} ${styles.blueText}`}>Mine opslag</h3>
-        <div className={styles.noPosts}>
-          <p className={styles.bodyText}>Du skal oprette et ensemble for at kunne lave opslag.</p>
+        <div className={styles.noEnsemble}>
+          <p className={styles.noEnsembleText}>Ingen ensembler</p>
+          <p className={styles.noEnsembleDescription}>Hvis du repræsenterer et ensemble kan du oprette det her, så du kan lave og opslag på vegne af ensemblet.</p>
+          <button className="primary">Opret Ensemble</button>
         </div>
-        <button className={styles.primaryButton} disabled>
-          Opret opslag
-        </button>
       </section>
     </div>
   );
 };
 
-export default Profile;
+export default ProfilePage;

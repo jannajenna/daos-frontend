@@ -1,8 +1,15 @@
-//Import components
+import React from "react";
+
 //import LandingPage from "./pages/LandingPage/LandingPage";
-//import CreateProfile from "./pages/CreateProfile/CreateProfile";
-//import Profile from "./pages/Profile/Profile";
-//import EditProfile from "./pages/EditProfile/EditProfile";
+//import ProfilePage from "./pages/Profile/Profile";
+//import CreateProfilePage from "./pages/CreateProfile/CreateProfile";
+//import EditProfilePage from "./pages/EditProfile/EditProfile";
+//import ListOfEnsembles from "./pages/ListOfEnsambles";
+//import EnsamblePage from "./pages/Ensamble/Ensamble";
+//import EditEnsemblePage from "./pages/EditEnsamble";
+//import CreatePostPage from "./pages/CreatePost/CreatePost";
+//import PostPage from "./pages/Post/Post";
+
 function App() {
   return <></>;
 }
