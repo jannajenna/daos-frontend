@@ -10,12 +10,14 @@ const Menu: React.FC = () => {
         <button className="close-btn">&times;</button>
       </div>
       <nav className="menu-items">
+        {/*This should be done bu routing not by href */}
         <a href="#">Hjem</a>
         <a href="#">Find musiker</a>
         <a href="#">Find ensemble</a>
         <a href="#">Profil</a>
       </nav>
       <div className="menu-actions">
+        {/*This should be the Button components */}
         <button className="btn-primary">Opret bruger</button>
         <button className="btn-secondary">Log ind</button>
       </div>
