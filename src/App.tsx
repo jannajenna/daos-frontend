@@ -1,7 +1,7 @@
 //import React from "react";
 
-import LandingPage from "./pages/LandingPage/LandingPage";
-//import ProfilePage from "./pages/Profile/Profile";
+//import LandingPage from "./pages/LandingPage/LandingPage";
+import ProfilePage from "./pages/Profile/Profile";
 //import CreateProfilePage from "./pages/CreateProfile/CreateProfile";
 //import EditProfilePage from "./pages/EditProfile/EditProfile";
 //import ListOfEnsembles from "./pages/ListOfEnsambles";
@@ -13,7 +13,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 function App() {
   return (
     <>
-      <LandingPage />
+      <ProfilePage />
     </>
   );
 }
