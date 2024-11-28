@@ -4,22 +4,19 @@ import styles from "./EditProfile.module.css";
 const EditProfile: React.FC = () => {
   return (
     <div className={styles.container}>
-      {/* Header */}
       <header className={styles.header}>
         <h2 className={styles.title}>Rediger Profil</h2>
         <div className={styles.menuIcon}>☰</div>
       </header>
 
-      {/* Edit Profile Form */}
       <form className={styles.form}>
-        {/* Name Fields */}
+        {/*Name*/}
         <div className={styles.formGroup}>
           <label htmlFor="name">Navn</label>
-          <input type="text" id="name" name="name" placeholder="Indtast fornavn" />
-          <input type="text" id="surname" name="surname" placeholder="Indtast efternavn" />
+          <input type="text" id="name" name="name" placeholder="Navn" />
+          <input type="text" id="surname" name="surname" placeholder="Efternavn" />
         </div>
-
-        {/* Profile Picture */}
+        {/*Profile picture*/}
         <div className={styles.formGroup}>
           <label htmlFor="profilePicture">Profilbillede</label>
           <div className={styles.profilePreviewPlaceholder}>{/* Placeholder for profile picture preview */}</div>
@@ -28,14 +25,12 @@ const EditProfile: React.FC = () => {
             Upload billede
           </button>
         </div>
-
         {/* Description */}
         <div className={styles.formGroup}>
           <label htmlFor="description">Profilbeskrivelse</label>
           <textarea id="description" name="description" placeholder="Skriv en kort beskrivelse af dig selv"></textarea>
         </div>
-
-        {/* Area Fields */}
+        {/* Adress */}
         <div className={styles.formGroup}>
           <label>Område</label>
           <input type="text" id="post" name="post" placeholder="Indtast postnummer" />
