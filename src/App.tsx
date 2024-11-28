@@ -1,6 +1,6 @@
-import React from "react";
+//import React from "react";
 
-//import LandingPage from "./pages/LandingPage/LandingPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 //import ProfilePage from "./pages/Profile/Profile";
 //import CreateProfilePage from "./pages/CreateProfile/CreateProfile";
 //import EditProfilePage from "./pages/EditProfile/EditProfile";
@@ -11,7 +11,11 @@ import React from "react";
 //import PostPage from "./pages/Post/Post";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <LandingPage />
+    </>
+  );
 }
 
 export default App;
