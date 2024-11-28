@@ -17,7 +17,7 @@ const CreateProfile: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
-    // Validation
+    /* Validation
     if (!name || !surname || !email || !password) {
       alert("Udfyld venligst alle felter.");
       return;
@@ -26,7 +26,7 @@ const CreateProfile: React.FC = () => {
     if (!/\S+@\S+\.\S+/.test(email)) {
       alert("Indtast en gyldig email-adresse.");
       return;
-    }
+    } */
   
     // Simulate successful submission
     console.log({ name, surname, email, password });

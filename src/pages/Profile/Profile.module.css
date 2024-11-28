@@ -1,185 +1,123 @@
-/* General Container */
-.container {
-    max-width: 100%; /* Full-width for mobile */
-    margin: 0 auto;
-    padding: 15px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header Section */
-  .header {
+@media (max-width: 480px) {
+  .ProfilePage {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    height: 100vh; /* Full viewport height for vertical centering */
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
   }
-  
-  .title {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .menuIcon {
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  /* Profile Section */
-  .profileSection {
+
+  .header {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: var(--spacing-md);
   }
-  
+
+  .title {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h1);
+    color: var(--color-primary-red);
+  }
+
+  .subtitle {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-small);
+    color: var(--text-color-dark);
+    margin-top: var(--spacing-sm);
+  }
+
+  .menuIcon {
+    font-size: var(--font-size-h3);
+    color: var(--color-dark-gray);
+    cursor: pointer;
+    margin-top: var(--spacing-sm);
+  }
+
+  .profileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-lg);
+    width: 90%; /* Limit width for better centering */
+  }
+
   .avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin: 0 auto 10px;
+    background-color: var(--color-gray);
+    margin-bottom: var(--spacing-md);
   }
-  
+
   .name {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h2);
+    color: var(--color-primary-dark-blue);
+    text-align: center;
   }
-  
+
   .details {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-body);
+    color: var(--text-color-dark);
+    margin-top: var(--spacing-sm);
+    text-align: center;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
   }
-  
-  .editButton {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .disabledButton {
-    background-color: #ddd;
-    color: #999;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: not-allowed;
-  }
-  
-  /* Ensembles Section */
+
   .ensembleSection {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 90%; /* Limit width for better centering */
   }
-  
+
   .ensembleHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: var(--spacing-md);
   }
-  
-  .ensembleHeader h3 {
-    font-size: 16px;
-    font-weight: bold;
+
+  .ensembleTitle {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    color: var(--text-color-dark);
   }
-  
-  .createButton {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
+
   .noEnsemble {
-    margin: 20px 0;
+    text-align: center;
+    margin-top: var(--spacing-md);
   }
-  
-  .noEnsembleImage {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 10px;
-  }
-  
+
   .noEnsembleText {
-    font-size: 16px;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-body);
     font-weight: bold;
-    margin-bottom: 5px;
+    color: var(--text-color-dark);
+    margin-bottom: var(--spacing-sm);
   }
-  
+
   .noEnsembleDescription {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-small);
+    color: var(--text-color-dark);
+    margin-bottom: var(--spacing-md);
   }
-  
-  .createEnsembleButton {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 480px) {
-    .title {
-      font-size: 14px;
-    }
-  
-    .avatar {
-      width: 70px;
-      height: 70px;
-    }
-  
-    .name {
-      font-size: 16px;
-    }
-  
-    .details {
-      font-size: 12px;
-    }
-  
-    .editButton, .disabledButton {
-      font-size: 12px;
-      padding: 8px 10px;
-    }
-  
-    .createButton {
-      font-size: 12px;
-      padding: 6px 10px;
-    }
-  
-    .createEnsembleButton {
-      font-size: 12px;
-      padding: 8px 15px;
-    }
-  
-    .noEnsembleText {
-      font-size: 14px;
-    }
-  
-    .noEnsembleDescription {
-      font-size: 12px;
-    }
-  }
-  
+}

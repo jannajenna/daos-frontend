@@ -3,10 +3,13 @@ import styles from "./Profile.module.css";
 
 const ProfilePage: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.ProfilePage}>
       {/* Header */}
       <header className={styles.header}>
         <h1 className={styles.title}>Musik Samspil</h1>
+        <p className={styles.subtitle}>
+          Skabt af DAOS - Dansk Amatørorkester Samvirke
+        </p>
         <div className={styles.menuIcon}>☰</div>
       </header>
 
@@ -23,8 +26,8 @@ const ProfilePage: React.FC = () => {
           Sidst logget ind 1 time siden
         </p>
         <div className={styles.buttons}>
-          <button className={styles.editButton}>Rediger Profil</button>
-          <button className={styles.disabledButton} disabled>
+          <button className="primary">Rediger Profil</button>
+          <button className="disabled" disabled>
             Indstillinger
           </button>
         </div>
@@ -33,23 +36,16 @@ const ProfilePage: React.FC = () => {
       {/* Ensembles Section */}
       <section className={styles.ensembleSection}>
         <div className={styles.ensembleHeader}>
-          <h3>Mine ensembler</h3>
-          <button className={styles.createButton}>Opret</button>
+          <h3 className={styles.ensembleTitle}>Mine ensembler</h3>
+          <button className="primary">Opret</button>
         </div>
         <div className={styles.noEnsemble}>
-          <img
-            src="placeholder-notebook.png"
-            alt="No Ensembles"
-            className={styles.noEnsembleImage}
-          />
           <p className={styles.noEnsembleText}>Ingen ensembler</p>
           <p className={styles.noEnsembleDescription}>
             Hvis du repræsenterer et ensemble kan du oprette det her, så du kan
             lave og opslag på vegne af ensemblet.
           </p>
-          <button className={styles.createEnsembleButton}>
-            Opret ensemble
-          </button>
+          <button className="primary">Opret Ensemble</button>
         </div>
       </section>
     </div>
@@ -57,3 +53,4 @@ const ProfilePage: React.FC = () => {
 };
 
 export default ProfilePage;
+
