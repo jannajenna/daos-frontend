@@ -1,0 +1,110 @@
+/* Container */
+.container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logoSection {
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #b22222;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+  .menuIcon {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    padding: 20px;
+  }
+  
+  .musicGraphic {
+    margin: 20px auto;
+  }
+  
+  .musicImage {
+    width: 120px;
+    height: auto;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #b22222;
+    margin: 20px 0;
+  }
+  
+  /* Login Box */
+  .loginBox {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginText {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  
+  .divider {
+    margin: 10px 0;
+  }
+  
+  /* Buttons */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .facebook {
+    background-color: #d3d3d3;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .email {
+    background-color: #000080;
+    color: #fff;
+  }
+  
+  .login {
+    background-color: #fff;
+    border: 1px solid #000080;
+    color: #000080;
+  }
+  
