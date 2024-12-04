@@ -7,22 +7,17 @@ const ProfilePage: React.FC = () => {
       {/* Header */}
       <header className={styles.header}>
         <h1 className={styles.title}>Musik Samspil</h1>
-        <p className={styles.subtitle}>
-          Skabt af DAOS - Dansk Amatørorkester Samvirke
-        </p>
+        <p className={styles.subtitle}>Skabt af DAOS - Dansk Amatørorkester Samvirke</p>
         <div className={styles.menuIcon}>☰</div>
       </header>
 
       {/* Profile Section */}
       <section className={styles.profileSection}>
-        <img
-          src="placeholder-avatar.png"
-          alt="User Avatar"
-          className={styles.avatar}
-        />
+        <img src="placeholder-avatar.png" alt="User Avatar" className={styles.avatar} />
         <h2 className={styles.name}>Susanne N.</h2>
         <p className={styles.details}>
-          Medlem siden Maj 2020<br />
+          Medlem siden Maj 2020
+          <br />
           Sidst logget ind 1 time siden
         </p>
         <div className={styles.buttons}>
@@ -41,10 +36,7 @@ const ProfilePage: React.FC = () => {
         </div>
         <div className={styles.noEnsemble}>
           <p className={styles.noEnsembleText}>Ingen ensembler</p>
-          <p className={styles.noEnsembleDescription}>
-            Hvis du repræsenterer et ensemble kan du oprette det her, så du kan
-            lave og opslag på vegne af ensemblet.
-          </p>
+          <p className={styles.noEnsembleDescription}>Hvis du repræsenterer et ensemble kan du oprette det her, så du kan lave og opslag på vegne af ensemblet.</p>
           <button className="primary">Opret Ensemble</button>
         </div>
       </section>
@@ -53,4 +45,3 @@ const ProfilePage: React.FC = () => {
 };
 
 export default ProfilePage;
-
