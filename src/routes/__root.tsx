@@ -1,19 +1,11 @@
-//import * as React from "react";
+//import React from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-
-//export const Route = createRootRoute({
-//component: RootComponent,
-//});
-
-//function RootComponent() {
-//return (
-//  <React.Fragment>
-//  <div>Hello "__root"!</div>
-// <Outlet />
-//</React.Fragment>
-// )
-//}
+import Menu from "../components/Menu/Menu"; // Ensure Menu is imported correctly
 
 export const Route = createRootRoute({
-  component: () => <Outlet />,
+  component: () => (
+    <>
+      <Outlet />
+    </>
+  ),
 });

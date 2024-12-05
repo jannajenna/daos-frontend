@@ -1,18 +1,7 @@
-//import React from "react";
-
-//import LandingPage from "./pages/LandingPage/LandingPage";
+// src/App.tsx
+import React from "react";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
-import { createRouter, RouterProvider } from "@tanstack/react-router";
-//import ProfilePage from "./pages/Profile/Profile";
-//import CreateProfilePage from "./pages/CreateProfile/CreateProfile";
-//import EditProfilePage from "./pages/EditProfile/EditProfile";
-//import ListOfEnsembles from "./pages/ListOfEnsambles";
-//import EnsamblePage from "./pages/Ensamble/Ensamble";
-//import EditEnsemblePage from "./pages/EditEnsamble";
-//import CreatePostPage from "./pages/CreatePost/CreatePost";
-//import PostPage from "./pages/Post/Post";
-
-const router = createRouter({ routeTree });
 
 declare module "@tanstack/react-router" {
   interface Register {
@@ -20,12 +9,12 @@ declare module "@tanstack/react-router" {
   }
 }
 
-function App() {
-  return (
-    <>
-      <RouterProvider router={router} />;
-    </>
-  );
-}
+const router = createRouter({
+  routeTree,
+});
+
+const App: React.FC = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;

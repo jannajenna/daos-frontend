@@ -1,5 +1,6 @@
 import React from "react";
 import "./Menu.modules.css";
+import { Link } from "@tanstack/react-router";
 
 const Menu: React.FC = () => {
   return (
@@ -15,6 +16,10 @@ const Menu: React.FC = () => {
         <a href="#">Find musiker</a>
         <a href="#">Find ensemble</a>
         <a href="#">Profil</a>
+      </nav>
+      <nav>
+        <Link to="/">Landing Page</Link>
+        <Link to="/profile">Profile</Link>
       </nav>
       <div className="menu-actions">
         {/*This should be the Button components */}

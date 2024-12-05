@@ -11,14 +11,28 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as LandingpageImport } from './routes/landingpage'
+import { Route as ProfileImport } from './routes/profile'
+import { Route as EditProfileImport } from './routes/edit-profile'
+import { Route as CreateProfileImport } from './routes/create-profile'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
-const LandingpageRoute = LandingpageImport.update({
-  id: '/landingpage',
-  path: '/landingpage',
+const ProfileRoute = ProfileImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const EditProfileRoute = EditProfileImport.update({
+  id: '/edit-profile',
+  path: '/edit-profile',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const CreateProfileRoute = CreateProfileImport.update({
+  id: '/create-profile',
+  path: '/create-profile',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -39,11 +53,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/landingpage': {
-      id: '/landingpage'
-      path: '/landingpage'
-      fullPath: '/landingpage'
-      preLoaderRoute: typeof LandingpageImport
+    '/create-profile': {
+      id: '/create-profile'
+      path: '/create-profile'
+      fullPath: '/create-profile'
+      preLoaderRoute: typeof CreateProfileImport
+      parentRoute: typeof rootRoute
+    }
+    '/edit-profile': {
+      id: '/edit-profile'
+      path: '/edit-profile'
+      fullPath: '/edit-profile'
+      preLoaderRoute: typeof EditProfileImport
+      parentRoute: typeof rootRoute
+    }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileImport
       parentRoute: typeof rootRoute
     }
   }
@@ -53,37 +81,47 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/landingpage': typeof LandingpageRoute
+  '/create-profile': typeof CreateProfileRoute
+  '/edit-profile': typeof EditProfileRoute
+  '/profile': typeof ProfileRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/landingpage': typeof LandingpageRoute
+  '/create-profile': typeof CreateProfileRoute
+  '/edit-profile': typeof EditProfileRoute
+  '/profile': typeof ProfileRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/landingpage': typeof LandingpageRoute
+  '/create-profile': typeof CreateProfileRoute
+  '/edit-profile': typeof EditProfileRoute
+  '/profile': typeof ProfileRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/landingpage'
+  fullPaths: '/' | '/create-profile' | '/edit-profile' | '/profile'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/landingpage'
-  id: '__root__' | '/' | '/landingpage'
+  to: '/' | '/create-profile' | '/edit-profile' | '/profile'
+  id: '__root__' | '/' | '/create-profile' | '/edit-profile' | '/profile'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  LandingpageRoute: typeof LandingpageRoute
+  CreateProfileRoute: typeof CreateProfileRoute
+  EditProfileRoute: typeof EditProfileRoute
+  ProfileRoute: typeof ProfileRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  LandingpageRoute: LandingpageRoute,
+  CreateProfileRoute: CreateProfileRoute,
+  EditProfileRoute: EditProfileRoute,
+  ProfileRoute: ProfileRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,14 +135,22 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/landingpage"
+        "/create-profile",
+        "/edit-profile",
+        "/profile"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/landingpage": {
-      "filePath": "landingpage.tsx"
+    "/create-profile": {
+      "filePath": "create-profile.tsx"
+    },
+    "/edit-profile": {
+      "filePath": "edit-profile.tsx"
+    },
+    "/profile": {
+      "filePath": "profile.tsx"
     }
   }
 }
