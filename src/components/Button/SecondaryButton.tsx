@@ -5,6 +5,8 @@ import React from "react";
 interface SecondaryButtonProps {
   label: string; //Text that will appear on the button will be a string
   onClick: () => void; // Function to call when the button is clicked
+  type?: "button" | "submit" | "reset"; //This button can have different purposes
+  //to?: string
 }
 
 const SecondaryButton: React.FC<SecondaryButtonProps> = ({ label, onClick }) => {
