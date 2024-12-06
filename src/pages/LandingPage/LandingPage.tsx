@@ -1,21 +1,38 @@
-import React from "react";
-//import { Link } from "@tanstack/react-router";
+//import React from "react";
+import styles from "./LandingPage.module.css";
 
-const LandingPage: React.FC = () => {
-  return <h1>This was not the landign page from Figma. It should be a burguer menu, a hero section and a long in or create profile option buttons. The style should not be inline but on the CSS modules</h1>;
+function LandingPage() {
+  return (
+    <div className={styles.container}>
+      {/* Header Section */}
+      <header className={styles.header}>
+        <div className={styles.logoSection}>
+          <h1 className={styles.title}>Musik Samspil</h1>
+          <p className={styles.subtitle}>Skabt af DAOS - Dansk Amatørorkester Samvirke</p>
+        </div>
+        <button className={styles.menuIcon}>☰</button>
+      </header>
 
-  /*<div style={{ textAlign: "center", padding: "20px" }}>
-    <h1>Welcome to Musik Samspil</h1>
-    <p>Your platform for managing ensembles and profiles!</p>
-    <div style={{ marginTop: "20px" }}>
-      <Link to="/profile">
-        <button className="primary">Go to Profile</button>
-      </Link>
-      <Link to="/ensembles" style={{ marginLeft: "10px" }}>
-        <button className="primary">View Ensembles</button>
-      </Link>
+      {/* Main Content Section */}
+      <main className={styles.mainContent}>
+        <div className={styles.musicGraphic}>
+          <img src="music-notes.svg" /* replace if we can get the right image */ alt="Music Notes" className={styles.musicImage} />
+        </div>
+        <h2 className={styles.description}>Stedet hvor musikere finder musikere og spiller musik sammen</h2>
+
+        {/* Login Box */}
+        <div className={styles.loginBox}>
+          <p className={styles.loginText}>Log ind for at finde musikere du kan spille med i hele Danmark</p>
+          <button className={`${styles.btn} ${styles.facebook}`} disabled>
+            Log ind med Facebook
+          </button>
+          <button className={`${styles.btn} ${styles.email}`}>Opret med e-mail</button>
+          <p className={styles.divider}>eller</p>
+          <button className={`${styles.btn} ${styles.login}`}>Log ind</button>
+        </div>
+      </main>
     </div>
-  </div>;*/
-};
+  );
+}
 
 export default LandingPage;

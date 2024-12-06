@@ -1,0 +1,153 @@
+/* Container */
+.container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #b22222;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .menuIcon {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  
+  /* Main Content */
+  .main {
+    margin-top: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Profile Picture */
+  .profilePictureSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profilePicturePlaceholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profileIcon {
+    font-size: 2rem;
+    color: #666;
+  }
+  
+  .uploadButton {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Form */
+  .form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .inlineInputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Instrument Section */
+  .instrumentSection {
+    margin: 20px 0;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Info Text */
+  .infoText {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Save Button */
+  .saveButton {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
