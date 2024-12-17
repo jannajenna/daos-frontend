@@ -9,7 +9,7 @@ import ProfilePage from "./pages/Profile/Profile";
 //import EditEnsemblePage from "./pages/EditEnsamble";
 //import CreatePostPage from "./pages/CreatePost/CreatePost";
 //import PostPage from "./pages/Post/Post";
-import CreatePost from "./pages/CreatePost"; 
+import CreatePost from "./pages/CreatePost/CreatePost";
 
 function App() {
   return (
